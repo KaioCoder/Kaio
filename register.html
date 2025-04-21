@@ -1,8 +1,9 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KaioShop - Login</title>
+  <title>KaioShop - Register</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -12,13 +13,13 @@
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
-    .login-container {
+    .register-container {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(10px);
       padding: 2rem;
@@ -27,11 +28,11 @@
       width: 320px;
       text-align: center;
     }
-    .login-container h2 {
+    .register-container h2 {
       margin-bottom: 1.5rem;
       color: #4a00e0;
     }
-    .login-container input {
+    .register-container input {
       width: 100%;
       padding: 0.75rem;
       margin-bottom: 1rem;
@@ -39,7 +40,7 @@
       border-radius: 8px;
       outline: none;
     }
-    .login-container button {
+    .register-container button {
       width: 100%;
       padding: 0.75rem;
       background: #4a00e0;
@@ -50,11 +51,10 @@
       cursor: pointer;
       transition: background 0.3s ease;
     }
-    .login-container button:hover {
+    .register-container button:hover {
       background: #3600a8;
     }
-    .back-home,
-    .register-link {
+    .back-home {
       margin-top: 1rem;
       display: block;
       color: #4a00e0;
@@ -63,13 +63,14 @@
   </style>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login to KaioShop</h2>
+  <div class="register-container">
+    <h2>Create Your KaioShop Account</h2>
     <input type="text" placeholder="Username" />
+    <input type="email" placeholder="Email" />
     <input type="password" placeholder="Password" />
-    <button>Login</button>
+    <input type="password" placeholder="Confirm Password" />
+    <button>Register</button>
     <a class="back-home" href="index.html">Back to Home</a>
-    <a class="register-link" href="register.html">Create Account</a>
   </div>
 </body>
 </html>
